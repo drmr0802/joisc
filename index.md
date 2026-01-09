@@ -1,3 +1,8 @@
+---
+layout: default
+title: JOISC 题解
+---
+
 # Test H1
 ## Test H2
 
