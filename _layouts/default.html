@@ -14,8 +14,41 @@
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+  /* 整个页面的浅灰背景 */
+    body {
+      margin: 0;
+      background: #f3f3f3;
+      font-family: -apple-system, BlinkMacSystemFont,
+                  "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    /* 控制整体居中 + 上下留白 */
+    .page-bg {
+      padding: 40px 16px;
+    }
+
+    /* 白色内容卡片 */
+    .content-card {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px 36px;
+
+      /* 阴影（核心） */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+      /* 可选：圆角 */
+      border-radius: 6px;
+    }
+  </style>
 </head>
 <body>
-  {{ content }}
+  <div class="page-bg">
+    <div class="content-card">
+      {{ content }}
+    </div>
+  </div>
 </body>
 </html>
