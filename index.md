@@ -7,4 +7,4 @@ title: JOISC 题解
 
 ## Unfinished problems.
 
-Click [here](../unsolved_problems/index.html).
+Click [here](unsolved_problems/index.html).
