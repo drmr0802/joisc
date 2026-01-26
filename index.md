@@ -8,3 +8,7 @@ title: JOISC 题解
 ## Unfinished problems.
 
 Click [here](unsolved_problems/index.html).
+
+## Tricks.
+
+Click [here](tricks/index.html).
