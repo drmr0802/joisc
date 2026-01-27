@@ -1,3 +1,8 @@
+---
+layout: default
+title: Tricks.
+---
+
 ## general tricks
 
 - 是二分吗？
@@ -24,13 +29,9 @@
 
 ## bitmask
 
-1. $x \oplus (x + 1) \oplus (x + 2) \oplus (x + 3)$ 有性质
-2. 条件 $\oplus A = 0$ 可以变为，$\oplus B = \oplus C, B \cup C = A$。
-3. 若 $\oplus L = \oplus R$。则设 $A = L \backslash B, B = L \cap R, C = R \backslash B$，有 $\oplus A = \oplus C$。
-
-## 计数
-
-1. 计算不合法的方案数？
+- $x \oplus (x + 1) \oplus (x + 2) \oplus (x + 3)$ 有性质
+- 条件 $\oplus A = 0$ 可以变为，$\oplus B = \oplus C, B \cup C = A$。
+- 若 $\oplus L = \oplus R$。则设 $A = L \backslash B, B = L \cap R, C = R \backslash B$，有 $\oplus A = \oplus C$。
 
 ## 树
 
@@ -42,25 +43,25 @@
 
 ## 字符串
 
-1. 一个字符串的所有 border 长度可以被分为 $O(\log)$ 组等差数列
-2. 条件 $A + B = B + A$ **等价于** $A$、$B$ 的最小周期**串**相等。
+- 一个字符串的所有 border 长度可以被分为 $O(\log)$ 组等差数列
+- 条件 $A + B = B + A$ **等价于** $A$、$B$ 的最小周期**串**相等。
 
 ## 数据结构
 
-1. 加单向边，维护强连通分量信息（P5163、CF1989F）
-2. 维护树的欧拉序吗？
-3. 链加，领域加可以用毛毛虫剖分。
+- 加单向边，维护强连通分量信息（P5163、CF1989F）
+- 维护树的欧拉序吗？
+- 链加，领域加可以用毛毛虫剖分。
 
 ## dp
 
-1. 从前往后 dp 吗？
-2. 从后往前 dp 吗？
-3. 从小到大 dp 吗？
-4. 从大到小 dp 吗？
-5. dp 范围很小吗？
-6. 线头 dp（连续段 dp） 吗？
-7. 可以用平衡树维护差分吗？
-8. 可以容斥吗？
+- 从前往后 dp 吗？
+- 从后往前 dp 吗？
+- 从小到大 dp 吗？
+- 从大到小 dp 吗？
+- dp 范围很小吗？
+- 线头 dp（连续段 dp） 吗？
+- 可以用平衡树维护差分吗？
+- 可以容斥吗？
 
 ---
 
@@ -71,7 +72,11 @@
 
 1. 可以转化贡献吗？
 
-## 组合恒等式
+---
+
+- 给定图 $G$，已知图 $G$ 的三元环个数和每个点的度数，可以求出 $G$ 反图的三元环个数。（QOJ1838）
+
+### 组合恒等式
 
 $$
 \binom{n}{m} = \binom{n - 1}{m} + \binom{n - 1}{m - 1}
@@ -99,6 +104,8 @@ $$
 $$
 \sum_{i = 0}^{n} \binom{i}{k} = \binom{n + 1}{k + 1}
 $$
+
+### 容斥
 
 是 min-max 容斥吗？
 
